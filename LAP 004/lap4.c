@@ -18,8 +18,9 @@ int main(void) {
 
     printf( "- - - - - -\n" ) ;
     printf( "Employees ID = %s \n" , EmployeesID ) ;
-    printf( "Salary =  %.2f $\n", TotalPay ) ;
+    printf( "Salary =  %.2f $\n" , TotalPay ) ;
 
     return 0 ;
 } //end main
+
 
