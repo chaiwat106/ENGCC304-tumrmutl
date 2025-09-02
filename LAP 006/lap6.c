@@ -11,7 +11,7 @@ int main() {
         for( int i = 1 ; i <= N ; i++ ) {
             printf( "%d\n" , i ) ;
             }
-        } else {
+    } else {
         printf( "Series Number : %d\n " , N ) ;
         for( int i = 2 ; i <= N ; i += 2 ) {
             printf( "%d\n" , i ) ;
@@ -20,4 +20,5 @@ int main() {
 
     return 0 ;
 }
+
 
