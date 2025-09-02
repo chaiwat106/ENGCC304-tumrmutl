@@ -1,26 +1,33 @@
 #include <stdio.h>
 
 int main() {
-    int n;
+    int n , i , j , isPrime ;
+
     printf( "Enter number : " ) ;
     scanf( "%d", &n ) ;
 
-    // วนลูปจาก n ลงไปถึง 2
-    for( int i = n ; i >= 2 ; i-- ) {
-        int isPrime = 1 ;  // สมมติว่าเป็นจำนวนเฉพาะ
+    i = n ;
+    do {
+        if( i >= 2 ) {
+            isPrime = 1 ;  // สมมติว่าเป็นจำนวนเฉพาะ
+            j = 2 ;
 
-        // ตรวจสอบว่า i หารลงตัวกับเลขอื่นหรือไม่
-        for( int j = 2 ; j < i ; j++ ) {
-            if( i % j == 0 ) {
-                isPrime = 0 ; // ถ้าหารลงตัว แสดงว่าไม่ใช่จำนวนเฉพาะ
-                break ;
+            // ตรวจสอบตัวประกอบโดยใช้ do...while
+            do {
+                if( i % j == 0 ) {
+                    isPrime = 0 ; // ถ้าหารลงตัว แสดงว่าไม่ใช่จำนวนเฉพาะ
+                    break ;
+                }
+                j++;
+            } while( j < i ) ;
+
+            if( isPrime ) {
+                printf( "%d " , i ) ;
             }
         }
+        i -- ; // ลดค่าลง
+    } while( i >= 2 ) ;
 
-        if( isPrime ) {
-            printf( "%d\n" , i ) ;
-        }
-    }
+    return 0 ;
 
-    return 0;
-}
+} // end main
