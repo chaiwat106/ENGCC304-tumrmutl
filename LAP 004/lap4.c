@@ -21,4 +21,5 @@ int main(void) {
     printf( "Salary =  %.2f $\n", TotalPay ) ;
 
     return 0 ;
-}
+} //end main
+
