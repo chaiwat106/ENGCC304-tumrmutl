@@ -3,7 +3,7 @@
 int main() {
     int n , i , j , isPrime ;
 
-    printf( "กรอกจำนวนเต็ม: ")  ;
+    printf( "Enter number : ")  ;
     scanf( "%d" , &n ) ;
 
     i = n ;
