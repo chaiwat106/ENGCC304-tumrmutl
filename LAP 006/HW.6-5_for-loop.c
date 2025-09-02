@@ -20,7 +20,7 @@ int main() {
         if( isPrime ) {
             printf( "%d\n" , i ) ;
         }
-    }
+    } // end for
 
     return 0;
 } //end main
